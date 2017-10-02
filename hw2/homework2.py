@@ -1,11 +1,12 @@
+##Вариант 2
 x = 0
 while x == 0:
-    print ("Введите слово:")
+    print ("Введите слово на русском:")
     a = input().lower()
     cyrlet = 'абвгдеёжзийклмнопрстуфхцчшщьыъэюя'
     for letter in a:
         if not (letter in cyrlet):
-            print ("Напишите слово по-русски")
+            print ("Напишите по-русски")
             x = 0
             break
         else:
