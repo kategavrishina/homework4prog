@@ -1,3 +1,4 @@
+#Вариант 7
 f = open("text1.txt", "r", encoding = "utf-8")
 lines = 0
 longlines = 0
