@@ -1,5 +1,4 @@
-#with open("Extinct_languages.tsv", encoding="utf-8") as f:
-with open("new1.txt", encoding="utf-8") as f:
+with open("Extinct_languages.tsv", encoding="utf-8") as f:
     text = f.readlines()
     #1
     for line in text:
