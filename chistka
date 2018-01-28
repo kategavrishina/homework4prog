@@ -1,4 +1,4 @@
-sym = "1234567890,—[]!\"'«»?.,;*{}<>@#$%^&)("
+sym = "0123456789.,?!:;()[]-_\|/"'«»*{}<>@#$%^&"
 
 with open("text.txt", 'r', encoding='utf-8') as f:
     for line in f:
@@ -7,5 +7,5 @@ with open("text.txt", 'r', encoding='utf-8') as f:
     words = line.split()
     line = line.replace("  ", " ")
     for word in words:
-        s.append(word.strip(SYMBS))
+        s.append(word.strip(sym))
     
