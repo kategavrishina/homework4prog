@@ -8,5 +8,6 @@ with open("new 1.txt", 'r', encoding='utf-8') as f:
         line = line.replace("  ", " ")
         for word in words:
             s.append(word.strip(sym))
-print (s)
+text = ' '.join(s)
+print (str)
     
