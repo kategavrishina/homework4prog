@@ -9,5 +9,5 @@ with open("new 1.txt", 'r', encoding='utf-8') as f:
         for word in words:
             s.append(word.strip(sym))
 text = ' '.join(s)
-print (str)
+print (text)
     
