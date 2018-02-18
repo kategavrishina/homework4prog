@@ -18,7 +18,7 @@ def game(d):
             n.append(line.strip())
     print('Вам будет предложена подсказка в виде прилагательного,\nк которому надо подобрать существительное.\n')
     start = input('Если хотите сыграть, нажмите Enter.')
-    #while start == '':
+    while start == '':
     if start == '':
         key = random.choice(list(d))
         print(d[key], '...')
@@ -27,7 +27,7 @@ def game(d):
             print(random.choice(y), '\n')
             start = input('Если хотите сыграть, нажмите Enter.')
         else:
-            #while answer.lower() != key.lower():
+            while answer.lower() != key.lower():
                 print(random.choice(n))
                 answer = input('Ваш ответ: ')
                 if answer.lower() == key.lower():
