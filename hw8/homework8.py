@@ -19,7 +19,6 @@ def game(d):
     print('Вам будет предложена подсказка в виде прилагательного,\nк которому надо подобрать существительное.\n')
     start = input('Если хотите сыграть, нажмите Enter.')
     while start == '':
-    if start == '':
         key = random.choice(list(d))
         print(d[key], '...')
         answer = input('Ваш ответ: ')
