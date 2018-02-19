@@ -1,5 +1,5 @@
 def reading(filename):
-    sym = "0123456789.,?!:;()[]-_|/\"'«»*{}<>@#$%^&№"
+    sym = "0123456789.,?!…:;()[]-_|/\"'«»*{}<>@#$%^&№"
     s = []
     with open(filename, encoding='utf-8') as f:
         for line in f:
