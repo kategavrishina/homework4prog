@@ -14,7 +14,7 @@ def searching():
                 g.write(string + '\n')
     
 def main():
-    print(searching())
+    return searching()
 
 if __name__=='__main__':
     main()
