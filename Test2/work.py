@@ -1,3 +1,5 @@
+#Вариант 1
+
 import re
 import collections
 
