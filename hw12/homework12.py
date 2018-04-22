@@ -4,11 +4,6 @@
 import os
 import re
 
-def listing():
-    file_list = os.listdir()
-    print('Список всех найденных файлов и папок:', end = '\n')
-    print('\n'.join(file_list))
-
 def searching():
     need = []
     file_list = os.listdir()
@@ -17,9 +12,11 @@ def searching():
             if re.search('([А-Яа-я]+.+?[A-Za-z]+)|([A-Za-z]+.+?[А-Яа-я]+)', name):
                 need.append(name)
     print('Количество искомых папок:', len(need))
+    print('Список искомых папок:', end = '\n')
+    print('\n'.join(need))
 
 def main():
-    return searching(),listing()
+    return searching()
 
 if __name__=='__main__':
     main()  
