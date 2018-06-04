@@ -1,3 +1,4 @@
+# Вариант 7
 import re
 
 sym = "0123456789.,?!…:;()[]-_|/\"'«»*{}<>@#$%^&№"
@@ -19,7 +20,6 @@ def sents(filename):
 def words(res):
     d = {}
     r = {}
-    i = 1
     for sent in res:     
         words = sent.lower().split()
         for word in words:
